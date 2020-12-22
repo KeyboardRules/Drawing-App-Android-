@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_color">
+
+    <SearchView
+        android:id="@+id/search_name"
+        android:background="#ccfffe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:iconifiedByDefault="false"
+        >
+        <requestFocus/>
+     </SearchView>
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_below="@+id/search_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/log_out_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:onClick="onClick"
+            android:text=" Log out"
+            android:textSize="25dp"
+            android:drawableLeft="@drawable/log_out"/>
+
+        <TextView
+            android:id="@+id/sort_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/sort"
+            android:onClick="onClick"
+            android:text="Sort by newest"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/list_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="355dp"
+        android:layout_marginRight="60dp"
+        android:clickable="false"
+        android:focusable="true"
+        app:srcCompat="@android:drawable/ic_input_add"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="100"
+        android:title="Delete" />
+    <item
+        android:id="@+id/menu_edit"
+        android:orderInCategory="100"
+        android:title="Edit" />
+    <item
+        android:id="@+id/menu_download"
+          android:orderInCategory="100"
+        android:title="Save to catagory" />
+</menu>
