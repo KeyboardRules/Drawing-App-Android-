@@ -1,8 +1,8 @@
 # How to use
-Using phpmysql so please install xampp
+1.Using phpmysql so please install xampp
 
-put file btlAroid into file C:\xampp\htdocs
+2.Put file btlAroid into file C:\xampp\htdocs
 
-Copy file painx.txt into phpmysql for database
+3.Copy file painx.txt into phpmysql for database
 
-Run file bigproject(android)
+4.Run file bigproject(android)
