@@ -1,4 +1,6 @@
--Bọn em sử dụng phpmysql nên thầy hãy cài xamp vào trước]
--cho file btlAroid vào file C:\xampp\htdocs
--Copy file painx.txt vào phpmysql để có database
--Chạy file bigproject(android) để đc chương trình
+# How to use
+-Using phpmysql so please install xampp
+
+-put file btlAroid into file C:\xampp\htdocs
+-Copy file painx.txt into phpmysql for database
+-Run file bigproject(android)
